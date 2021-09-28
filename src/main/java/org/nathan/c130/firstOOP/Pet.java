@@ -12,6 +12,7 @@ public class Pet {
         name = "Rover";
         type = "Dog";
         age = 1;
+        size = 'L';
         isMale = true;
     }
 
