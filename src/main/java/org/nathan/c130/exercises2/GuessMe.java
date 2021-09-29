@@ -9,15 +9,24 @@ public class GuessMe {
         int i = new Random().nextInt(10) + 1;//random can also generate booleans and doubles
         int numGuess;
 
-        System.out.println("Please enter a (whole) number between 1 and 10");
-        numGuess = Integer.parseInt(scanner.nextLine());
+        while(true){
+            System.out.println("Please enter a (whole) number between 1 and 10");
+            numGuess = Integer.parseInt(scanner.nextLine());
 
-        if(numGuess == i){
-            System.out.println("Wow! Nice guess! " + numGuess + " was correct!");
-        }else if(numGuess < i){
-            System.out.println("Unlucky, too low! You chose " + numGuess + " but I chose " + i + "...");
-        }else{
-            System.out.println("Way too high! You chose " + numGuess + " but I chose " + i + "...");
+            if(numGuess > 1 && numGuess < 10){
+                if (numGuess == i) {
+                    System.out.println("Wow! Nice guess! " + numGuess + " was correct!");
+                    break;
+                } else if (numGuess < i) {
+                    System.out.println("Unlucky, too low! You chose " + numGuess + " but I chose " + i + "...");
+                    break;
+                } else {
+                    System.out.println("Way too high! You chose " + numGuess + " but I chose " + i + "...");
+                    break;
+                }
+            }else{
+                System.out.println("Please enter a valid guess.");
+            }
         }
     }
 }
