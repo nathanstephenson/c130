@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class GuessMe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int i = new Random().nextInt(10) + 1;
+        int i = new Random().nextInt(10) + 1;//random can also generate booleans and doubles
         int numGuess;
 
         System.out.println("Please enter a (whole) number between 1 and 10");
