@@ -1,4 +1,4 @@
-package org.nathan.c130.exercises2ifs;
+package org.nathan.c130.exercises2;
 
 public class LlamasWhalesAndDodosOhMy {
     public static void main(String[] args) {

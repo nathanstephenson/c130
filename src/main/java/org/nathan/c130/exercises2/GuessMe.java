@@ -1,4 +1,4 @@
-package org.nathan.c130.exercises2ifs;
+package org.nathan.c130.exercises2;
 
 import java.util.Random;
 import java.util.Scanner;
